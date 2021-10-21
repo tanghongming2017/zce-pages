@@ -1,0 +1,42 @@
+{
+  "name": "zce-pages",
+  "version": "0.1.0",
+  "description": "static web app workflow",
+  "keywords": [
+    "zce-pages",
+    "zce"
+  ],
+  "repository": "testmelody/zce-pages",
+  "license": "MIT",
+  "author": "testmelody <5192114+testmelody@user.noreply.gitee.com> (https://www.baidu.com)",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "27.2.1",
+    "standard": "16.0.3"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
